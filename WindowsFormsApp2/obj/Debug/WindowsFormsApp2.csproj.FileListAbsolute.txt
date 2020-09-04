@@ -9,3 +9,5 @@ D:\Уроки\WindowsForms\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFo
 D:\Уроки\WindowsForms\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe
 D:\Уроки\WindowsForms\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb
 D:\Уроки\WindowsForms\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Paaformi.resources
+D:\Уроки\WindowsForms\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Paaformi2.resources
+D:\Уроки\WindowsForms\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.picture.resources

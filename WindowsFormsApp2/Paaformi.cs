@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.Windows.Forms.VisualStyles;
 
 namespace WindowsFormsApp2
 {
@@ -15,6 +15,8 @@ namespace WindowsFormsApp2
     {
         int[] Taulukko = new int[0];
         int[] Loto = new int[10];
+        List<String> StriingList = new List<string>();
+        Dictionary<string, string> NewDisconary = new Dictionary<string, string>();
         public Paaformi()
         {
             InitializeComponent();
@@ -124,7 +126,7 @@ namespace WindowsFormsApp2
            
             Button painettuNappi = sender as Button;
             int Switch = painettuNappi.TabIndex;
-            bool Case1true = false;
+
             
             
 
@@ -157,16 +159,138 @@ namespace WindowsFormsApp2
             int RandomNumero = 0;
             for (int i = 0; i < 10; i++)
             {
+                again:
                 RandomNumero= rand.Next(1, 41);
+                if (this.Loto.Contains(RandomNumero))
+                {
+                    goto again;
+                }
                 this.Loto[i] = RandomNumero;
-              
+            }
+            this.Lotto0.Text = Convert.ToString(Loto[0]);
+            this.Lotto1.Text = Convert.ToString(Loto[1]);
+            this.Lotto2.Text = Convert.ToString(Loto[2]);
+            this.Lotto3.Text = Convert.ToString(Loto[3]);
+            this.Lotto4.Text = Convert.ToString(Loto[4]);
+            this.Lotto5.Text = Convert.ToString(Loto[5]);
+            this.Lotto6.Text = Convert.ToString(Loto[6]);
+            this.Lotto7.Text = Convert.ToString(Loto[7]);
+            this.Lotto8.Text = Convert.ToString(Loto[8]);
+        }
 
+        private void maxandMin_Click(object sender, EventArgs e)
+        {
+            this.AlllotoNumerot.Text = "";
+            int temp;
+            for (int i = 0; i < this.Loto.Length - 1; i++)
+            {
+                for (int j = i + 1; j < this.Loto.Length; j++)
+                {
+                    if (this.Loto[i] > this.Loto[j])
+                    {
+                        temp = this.Loto[i];
+                        this.Loto[i] = this.Loto[j];
+                        this.Loto[j] = temp;
+                    }
+                }
+            }
+            string loto;
+            for (int i = 0; i < this.Loto.Length; i++)
+            {
+                loto = Convert.ToString(this.Loto[i]);
+                this.AlllotoNumerot.Text = AlllotoNumerot.Text + ", " + loto;
+            }
+        }
+
+        private void OikeinLoto_Click(object sender, EventArgs e)
+        {
+            this.Oikein.Text = "";
+            int KuinkaOikein = 0;
+                if (this.Lotto0.Text == PlayerLoto0.Text)
+                {
+                    KuinkaOikein++;
+                }
+                if (this.Lotto1.Text == PlayerLoto1.Text)
+                {
+                    KuinkaOikein++;
+                }
+                if (this.Lotto2.Text == PlayerLoto2.Text)
+                {
+                    KuinkaOikein++;
+                }
+                if (this.Lotto3.Text == PlayerLoto3.Text)
+                {
+                    KuinkaOikein++;
+                }
+                if (this.Lotto4.Text == PlayerLoto4.Text)
+                {
+                    KuinkaOikein++;
+                }
+                if (this.Lotto5.Text == PlayerLoto5.Text)
+                {
+                    KuinkaOikein++;
+                }
+                if (this.Lotto6.Text == PlayerLoto6.Text)
+                {
+                    KuinkaOikein++;
+                }
+            this.Oikein.Text = "Lotto oikein: " + KuinkaOikein;
+        }
+
+        private void LuodanLista_Click(object sender, EventArgs e)
+        {
+            this.ButtonLissaList.Enabled = true;
+           
+
+        }
+
+        private void ButtonLissaList_Click(object sender, EventArgs e)
+        {
+            string Add;
+            Add=this.LisatanLista.Text;
+            this.StriingList.Add(Add);
+            this.HaeLista.Enabled = true;
+        }
+
+        private void HaeLista_Click(object sender, EventArgs e)
+        {
+            this.ListBox.Items.Clear();
+            foreach (string C in this.StriingList)
+            {
+                this.ListBox.Items.Add(C);
+               
+            }
+        }
+
+        private void LuoDisconary_Click(object sender, EventArgs e)
+        {
+            this.LissäDisconary.Enabled = true;
+        }
+
+        private void LissäDisconary_Click(object sender, EventArgs e)
+        {
+            string key;
+            string value;
+            key = this.Key.Text;
+            value = this.Value.Text;
+            this.NewDisconary.Add(key, value);
+            this.HaeDisconary.Enabled = true;
+        }
+
+        private void HaeDisconary_Click(object sender, EventArgs e)
+        {
+            string key;
+            key = this.HaeKey.Text;
+            string value;
+            if (this.NewDisconary.ContainsKey(key))
+            {
+                value = this.NewDisconary[key];
+                this.HaeValue.Text = value;
+            }
+            if (!this.NewDisconary.ContainsKey(key))
+            {
+                this.HaeValue.Text = "Key not Found";
             }
         }
     }
-    //foreach(int check in this.Loto.Distinct())
-    // {
-    //     string check2 = Convert.ToString(check);
-    //    this.textBox10.Text = this.textBox10.Text+check2;
-    // }
 }

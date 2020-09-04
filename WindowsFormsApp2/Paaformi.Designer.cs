@@ -54,16 +54,47 @@
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.button6 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.maxandMin = new System.Windows.Forms.Button();
+            this.AlllotoNumerot = new System.Windows.Forms.TextBox();
+            this.Lotto8 = new System.Windows.Forms.TextBox();
+            this.Lotto7 = new System.Windows.Forms.TextBox();
+            this.Lotto6 = new System.Windows.Forms.TextBox();
+            this.Lotto5 = new System.Windows.Forms.TextBox();
+            this.Lotto4 = new System.Windows.Forms.TextBox();
+            this.Lotto3 = new System.Windows.Forms.TextBox();
+            this.Lotto0 = new System.Windows.Forms.TextBox();
+            this.Lotto2 = new System.Windows.Forms.TextBox();
+            this.Lotto1 = new System.Windows.Forms.TextBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.OikeinLoto = new System.Windows.Forms.Button();
+            this.Oikein = new System.Windows.Forms.TextBox();
+            this.PlayerLoto6 = new System.Windows.Forms.TextBox();
+            this.PlayerLoto5 = new System.Windows.Forms.TextBox();
+            this.PlayerLoto4 = new System.Windows.Forms.TextBox();
+            this.PlayerLoto3 = new System.Windows.Forms.TextBox();
+            this.PlayerLoto2 = new System.Windows.Forms.TextBox();
+            this.PlayerLoto1 = new System.Windows.Forms.TextBox();
+            this.PlayerLoto0 = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.LuodanLista = new System.Windows.Forms.Button();
+            this.label10 = new System.Windows.Forms.Label();
+            this.LisatanLista = new System.Windows.Forms.TextBox();
+            this.ButtonLissaList = new System.Windows.Forms.Button();
+            this.label11 = new System.Windows.Forms.Label();
+            this.ListBox = new System.Windows.Forms.ComboBox();
+            this.HaeLista = new System.Windows.Forms.Button();
+            this.text = new System.Windows.Forms.Label();
+            this.LuoDisconary = new System.Windows.Forms.Button();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.Key = new System.Windows.Forms.TextBox();
+            this.Value = new System.Windows.Forms.TextBox();
+            this.HaeKey = new System.Windows.Forms.TextBox();
+            this.HaeValue = new System.Windows.Forms.TextBox();
+            this.LissäDisconary = new System.Windows.Forms.Button();
+            this.HaeDisconary = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
@@ -301,97 +332,390 @@
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel1.Controls.Add(this.textBox12);
-            this.panel1.Controls.Add(this.textBox11);
-            this.panel1.Controls.Add(this.textBox10);
-            this.panel1.Controls.Add(this.textBox9);
-            this.panel1.Controls.Add(this.textBox8);
-            this.panel1.Controls.Add(this.textBox7);
-            this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Controls.Add(this.textBox4);
-            this.panel1.Controls.Add(this.textBox3);
+            this.panel1.Controls.Add(this.maxandMin);
+            this.panel1.Controls.Add(this.AlllotoNumerot);
+            this.panel1.Controls.Add(this.Lotto8);
+            this.panel1.Controls.Add(this.Lotto7);
+            this.panel1.Controls.Add(this.Lotto6);
+            this.panel1.Controls.Add(this.Lotto5);
+            this.panel1.Controls.Add(this.Lotto4);
+            this.panel1.Controls.Add(this.Lotto3);
+            this.panel1.Controls.Add(this.Lotto0);
+            this.panel1.Controls.Add(this.Lotto2);
+            this.panel1.Controls.Add(this.Lotto1);
             this.panel1.Location = new System.Drawing.Point(232, 144);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(283, 294);
             this.panel1.TabIndex = 69;
             // 
-            // textBox3
+            // maxandMin
             // 
-            this.textBox3.Location = new System.Drawing.Point(40, 46);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 1;
+            this.maxandMin.Location = new System.Drawing.Point(176, 178);
+            this.maxandMin.Name = "maxandMin";
+            this.maxandMin.Size = new System.Drawing.Size(100, 24);
+            this.maxandMin.TabIndex = 11;
+            this.maxandMin.Text = " järjestyksessä";
+            this.maxandMin.UseVisualStyleBackColor = true;
+            this.maxandMin.Click += new System.EventHandler(this.maxandMin_Click);
             // 
-            // textBox4
+            // AlllotoNumerot
             // 
-            this.textBox4.Location = new System.Drawing.Point(40, 89);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.ReadOnly = true;
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 2;
+            this.AlllotoNumerot.Location = new System.Drawing.Point(176, 204);
+            this.AlllotoNumerot.Multiline = true;
+            this.AlllotoNumerot.Name = "AlllotoNumerot";
+            this.AlllotoNumerot.ReadOnly = true;
+            this.AlllotoNumerot.Size = new System.Drawing.Size(100, 48);
+            this.AlllotoNumerot.TabIndex = 10;
             // 
-            // textBox2
+            // Lotto8
             // 
-            this.textBox2.Location = new System.Drawing.Point(40, 11);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 3;
+            this.Lotto8.Location = new System.Drawing.Point(176, 160);
+            this.Lotto8.Name = "Lotto8";
+            this.Lotto8.ReadOnly = true;
+            this.Lotto8.Size = new System.Drawing.Size(100, 20);
+            this.Lotto8.TabIndex = 9;
             // 
-            // textBox7
+            // Lotto7
             // 
-            this.textBox7.Location = new System.Drawing.Point(40, 131);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.ReadOnly = true;
-            this.textBox7.Size = new System.Drawing.Size(100, 20);
-            this.textBox7.TabIndex = 4;
+            this.Lotto7.Location = new System.Drawing.Point(176, 46);
+            this.Lotto7.Name = "Lotto7";
+            this.Lotto7.ReadOnly = true;
+            this.Lotto7.Size = new System.Drawing.Size(100, 20);
+            this.Lotto7.TabIndex = 8;
             // 
-            // textBox8
+            // Lotto6
             // 
-            this.textBox8.Location = new System.Drawing.Point(40, 172);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.ReadOnly = true;
-            this.textBox8.Size = new System.Drawing.Size(100, 20);
-            this.textBox8.TabIndex = 5;
+            this.Lotto6.Location = new System.Drawing.Point(40, 261);
+            this.Lotto6.Name = "Lotto6";
+            this.Lotto6.ReadOnly = true;
+            this.Lotto6.Size = new System.Drawing.Size(100, 20);
+            this.Lotto6.TabIndex = 7;
             // 
-            // textBox9
+            // Lotto5
             // 
-            this.textBox9.Location = new System.Drawing.Point(40, 216);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.ReadOnly = true;
-            this.textBox9.Size = new System.Drawing.Size(100, 20);
-            this.textBox9.TabIndex = 6;
+            this.Lotto5.Location = new System.Drawing.Point(40, 216);
+            this.Lotto5.Name = "Lotto5";
+            this.Lotto5.ReadOnly = true;
+            this.Lotto5.Size = new System.Drawing.Size(100, 20);
+            this.Lotto5.TabIndex = 6;
             // 
-            // textBox10
+            // Lotto4
             // 
-            this.textBox10.Location = new System.Drawing.Point(40, 261);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.ReadOnly = true;
-            this.textBox10.Size = new System.Drawing.Size(100, 20);
-            this.textBox10.TabIndex = 7;
+            this.Lotto4.Location = new System.Drawing.Point(40, 172);
+            this.Lotto4.Name = "Lotto4";
+            this.Lotto4.ReadOnly = true;
+            this.Lotto4.Size = new System.Drawing.Size(100, 20);
+            this.Lotto4.TabIndex = 5;
             // 
-            // textBox11
+            // Lotto3
             // 
-            this.textBox11.Location = new System.Drawing.Point(176, 46);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.ReadOnly = true;
-            this.textBox11.Size = new System.Drawing.Size(100, 20);
-            this.textBox11.TabIndex = 8;
+            this.Lotto3.Location = new System.Drawing.Point(40, 131);
+            this.Lotto3.Name = "Lotto3";
+            this.Lotto3.ReadOnly = true;
+            this.Lotto3.Size = new System.Drawing.Size(100, 20);
+            this.Lotto3.TabIndex = 4;
             // 
-            // textBox12
+            // Lotto0
             // 
-            this.textBox12.Location = new System.Drawing.Point(176, 160);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.ReadOnly = true;
-            this.textBox12.Size = new System.Drawing.Size(100, 20);
-            this.textBox12.TabIndex = 9;
+            this.Lotto0.Location = new System.Drawing.Point(40, 11);
+            this.Lotto0.Name = "Lotto0";
+            this.Lotto0.ReadOnly = true;
+            this.Lotto0.Size = new System.Drawing.Size(100, 20);
+            this.Lotto0.TabIndex = 3;
+            // 
+            // Lotto2
+            // 
+            this.Lotto2.Location = new System.Drawing.Point(40, 89);
+            this.Lotto2.Name = "Lotto2";
+            this.Lotto2.ReadOnly = true;
+            this.Lotto2.Size = new System.Drawing.Size(100, 20);
+            this.Lotto2.TabIndex = 2;
+            // 
+            // Lotto1
+            // 
+            this.Lotto1.Location = new System.Drawing.Point(40, 46);
+            this.Lotto1.Name = "Lotto1";
+            this.Lotto1.ReadOnly = true;
+            this.Lotto1.Size = new System.Drawing.Size(100, 20);
+            this.Lotto1.TabIndex = 1;
+            // 
+            // panel2
+            // 
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel2.Controls.Add(this.OikeinLoto);
+            this.panel2.Controls.Add(this.Oikein);
+            this.panel2.Controls.Add(this.PlayerLoto6);
+            this.panel2.Controls.Add(this.PlayerLoto5);
+            this.panel2.Controls.Add(this.PlayerLoto4);
+            this.panel2.Controls.Add(this.PlayerLoto3);
+            this.panel2.Controls.Add(this.PlayerLoto2);
+            this.panel2.Controls.Add(this.PlayerLoto1);
+            this.panel2.Controls.Add(this.PlayerLoto0);
+            this.panel2.Location = new System.Drawing.Point(232, 454);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(283, 205);
+            this.panel2.TabIndex = 70;
+            // 
+            // OikeinLoto
+            // 
+            this.OikeinLoto.Location = new System.Drawing.Point(176, 37);
+            this.OikeinLoto.Name = "OikeinLoto";
+            this.OikeinLoto.Size = new System.Drawing.Size(100, 24);
+            this.OikeinLoto.TabIndex = 12;
+            this.OikeinLoto.Text = "Check Loto";
+            this.OikeinLoto.UseVisualStyleBackColor = true;
+            this.OikeinLoto.Click += new System.EventHandler(this.OikeinLoto_Click);
+            // 
+            // Oikein
+            // 
+            this.Oikein.Location = new System.Drawing.Point(176, 93);
+            this.Oikein.Multiline = true;
+            this.Oikein.Name = "Oikein";
+            this.Oikein.ReadOnly = true;
+            this.Oikein.Size = new System.Drawing.Size(100, 48);
+            this.Oikein.TabIndex = 12;
+            // 
+            // PlayerLoto6
+            // 
+            this.PlayerLoto6.Location = new System.Drawing.Point(40, 171);
+            this.PlayerLoto6.Name = "PlayerLoto6";
+            this.PlayerLoto6.Size = new System.Drawing.Size(100, 20);
+            this.PlayerLoto6.TabIndex = 6;
+            // 
+            // PlayerLoto5
+            // 
+            this.PlayerLoto5.Location = new System.Drawing.Point(40, 145);
+            this.PlayerLoto5.Name = "PlayerLoto5";
+            this.PlayerLoto5.Size = new System.Drawing.Size(100, 20);
+            this.PlayerLoto5.TabIndex = 5;
+            // 
+            // PlayerLoto4
+            // 
+            this.PlayerLoto4.Location = new System.Drawing.Point(40, 119);
+            this.PlayerLoto4.Name = "PlayerLoto4";
+            this.PlayerLoto4.Size = new System.Drawing.Size(100, 20);
+            this.PlayerLoto4.TabIndex = 4;
+            // 
+            // PlayerLoto3
+            // 
+            this.PlayerLoto3.Location = new System.Drawing.Point(40, 93);
+            this.PlayerLoto3.Name = "PlayerLoto3";
+            this.PlayerLoto3.Size = new System.Drawing.Size(100, 20);
+            this.PlayerLoto3.TabIndex = 3;
+            // 
+            // PlayerLoto2
+            // 
+            this.PlayerLoto2.Location = new System.Drawing.Point(40, 67);
+            this.PlayerLoto2.Name = "PlayerLoto2";
+            this.PlayerLoto2.Size = new System.Drawing.Size(100, 20);
+            this.PlayerLoto2.TabIndex = 2;
+            // 
+            // PlayerLoto1
+            // 
+            this.PlayerLoto1.Location = new System.Drawing.Point(40, 41);
+            this.PlayerLoto1.Name = "PlayerLoto1";
+            this.PlayerLoto1.Size = new System.Drawing.Size(100, 20);
+            this.PlayerLoto1.TabIndex = 1;
+            // 
+            // PlayerLoto0
+            // 
+            this.PlayerLoto0.Location = new System.Drawing.Point(40, 15);
+            this.PlayerLoto0.Name = "PlayerLoto0";
+            this.PlayerLoto0.Size = new System.Drawing.Size(100, 20);
+            this.PlayerLoto0.TabIndex = 0;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label9.Location = new System.Drawing.Point(615, 173);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(179, 24);
+            this.label9.TabIndex = 71;
+            this.label9.Text = "Luodaan String Lista";
+            // 
+            // LuodanLista
+            // 
+            this.LuodanLista.Location = new System.Drawing.Point(633, 218);
+            this.LuodanLista.Name = "LuodanLista";
+            this.LuodanLista.Size = new System.Drawing.Size(75, 23);
+            this.LuodanLista.TabIndex = 72;
+            this.LuodanLista.Text = "Luo lista";
+            this.LuodanLista.UseVisualStyleBackColor = true;
+            this.LuodanLista.Click += new System.EventHandler(this.LuodanLista_Click);
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label10.Location = new System.Drawing.Point(586, 277);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(218, 24);
+            this.label10.TabIndex = 73;
+            this.label10.Text = "Lisatan Listan Merkkijono";
+            // 
+            // LisatanLista
+            // 
+            this.LisatanLista.Location = new System.Drawing.Point(590, 327);
+            this.LisatanLista.Name = "LisatanLista";
+            this.LisatanLista.Size = new System.Drawing.Size(152, 20);
+            this.LisatanLista.TabIndex = 74;
+            // 
+            // ButtonLissaList
+            // 
+            this.ButtonLissaList.Enabled = false;
+            this.ButtonLissaList.Location = new System.Drawing.Point(765, 324);
+            this.ButtonLissaList.Name = "ButtonLissaList";
+            this.ButtonLissaList.Size = new System.Drawing.Size(75, 23);
+            this.ButtonLissaList.TabIndex = 75;
+            this.ButtonLissaList.Text = "Lisää";
+            this.ButtonLissaList.UseVisualStyleBackColor = true;
+            this.ButtonLissaList.Click += new System.EventHandler(this.ButtonLissaList_Click);
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label11.Location = new System.Drawing.Point(586, 402);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(181, 24);
+            this.label11.TabIndex = 76;
+            this.label11.Text = "Haetan Listan Sisalta";
+            // 
+            // ListBox
+            // 
+            this.ListBox.FormattingEnabled = true;
+            this.ListBox.Location = new System.Drawing.Point(590, 445);
+            this.ListBox.Name = "ListBox";
+            this.ListBox.Size = new System.Drawing.Size(152, 21);
+            this.ListBox.TabIndex = 77;
+            // 
+            // HaeLista
+            // 
+            this.HaeLista.Enabled = false;
+            this.HaeLista.Location = new System.Drawing.Point(765, 445);
+            this.HaeLista.Name = "HaeLista";
+            this.HaeLista.Size = new System.Drawing.Size(75, 23);
+            this.HaeLista.TabIndex = 78;
+            this.HaeLista.Text = "Hae";
+            this.HaeLista.UseVisualStyleBackColor = true;
+            this.HaeLista.Click += new System.EventHandler(this.HaeLista_Click);
+            // 
+            // text
+            // 
+            this.text.AutoSize = true;
+            this.text.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.text.Location = new System.Drawing.Point(1230, 70);
+            this.text.Name = "text";
+            this.text.Size = new System.Drawing.Size(162, 24);
+            this.text.TabIndex = 79;
+            this.text.Text = "Luodan Disconary";
+            // 
+            // LuoDisconary
+            // 
+            this.LuoDisconary.Location = new System.Drawing.Point(1265, 115);
+            this.LuoDisconary.Name = "LuoDisconary";
+            this.LuoDisconary.Size = new System.Drawing.Size(75, 23);
+            this.LuoDisconary.TabIndex = 80;
+            this.LuoDisconary.Text = "Luo Disconary";
+            this.LuoDisconary.UseVisualStyleBackColor = true;
+            this.LuoDisconary.Click += new System.EventHandler(this.LuoDisconary_Click);
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label12.Location = new System.Drawing.Point(1224, 173);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(168, 24);
+            this.label12.TabIndex = 81;
+            this.label12.Text = "Lisätän Elementeja";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label13.Location = new System.Drawing.Point(1230, 327);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(170, 24);
+            this.label13.TabIndex = 82;
+            this.label13.Text = "Häetan Elementeja";
+            // 
+            // Key
+            // 
+            this.Key.Location = new System.Drawing.Point(1252, 221);
+            this.Key.Name = "Key";
+            this.Key.Size = new System.Drawing.Size(100, 20);
+            this.Key.TabIndex = 83;
+            // 
+            // Value
+            // 
+            this.Value.Location = new System.Drawing.Point(1252, 267);
+            this.Value.Name = "Value";
+            this.Value.Size = new System.Drawing.Size(100, 20);
+            this.Value.TabIndex = 84;
+            // 
+            // HaeKey
+            // 
+            this.HaeKey.Location = new System.Drawing.Point(1240, 369);
+            this.HaeKey.Name = "HaeKey";
+            this.HaeKey.Size = new System.Drawing.Size(100, 20);
+            this.HaeKey.TabIndex = 85;
+            // 
+            // HaeValue
+            // 
+            this.HaeValue.Location = new System.Drawing.Point(1240, 418);
+            this.HaeValue.Name = "HaeValue";
+            this.HaeValue.ReadOnly = true;
+            this.HaeValue.Size = new System.Drawing.Size(81, 20);
+            this.HaeValue.TabIndex = 86;
+            // 
+            // LissäDisconary
+            // 
+            this.LissäDisconary.Enabled = false;
+            this.LissäDisconary.Location = new System.Drawing.Point(1378, 267);
+            this.LissäDisconary.Name = "LissäDisconary";
+            this.LissäDisconary.Size = new System.Drawing.Size(75, 23);
+            this.LissäDisconary.TabIndex = 87;
+            this.LissäDisconary.Text = "Lisää";
+            this.LissäDisconary.UseVisualStyleBackColor = true;
+            this.LissäDisconary.Click += new System.EventHandler(this.LissäDisconary_Click);
+            // 
+            // HaeDisconary
+            // 
+            this.HaeDisconary.Enabled = false;
+            this.HaeDisconary.Location = new System.Drawing.Point(1378, 415);
+            this.HaeDisconary.Name = "HaeDisconary";
+            this.HaeDisconary.Size = new System.Drawing.Size(75, 23);
+            this.HaeDisconary.TabIndex = 88;
+            this.HaeDisconary.Text = "Hae";
+            this.HaeDisconary.UseVisualStyleBackColor = true;
+            this.HaeDisconary.Click += new System.EventHandler(this.HaeDisconary_Click);
             // 
             // Paaformi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1198, 450);
+            this.ClientSize = new System.Drawing.Size(1561, 696);
+            this.Controls.Add(this.HaeDisconary);
+            this.Controls.Add(this.LissäDisconary);
+            this.Controls.Add(this.HaeValue);
+            this.Controls.Add(this.HaeKey);
+            this.Controls.Add(this.Value);
+            this.Controls.Add(this.Key);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.LuoDisconary);
+            this.Controls.Add(this.text);
+            this.Controls.Add(this.HaeLista);
+            this.Controls.Add(this.ListBox);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.ButtonLissaList);
+            this.Controls.Add(this.LisatanLista);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.LuodanLista);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.textBox6);
@@ -422,6 +746,8 @@
             this.Text = "Paaformi";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -455,14 +781,44 @@
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox Lotto8;
+        private System.Windows.Forms.TextBox Lotto7;
+        private System.Windows.Forms.TextBox Lotto6;
+        private System.Windows.Forms.TextBox Lotto5;
+        private System.Windows.Forms.TextBox Lotto4;
+        private System.Windows.Forms.TextBox Lotto3;
+        private System.Windows.Forms.TextBox Lotto0;
+        private System.Windows.Forms.TextBox Lotto2;
+        private System.Windows.Forms.TextBox Lotto1;
+        private System.Windows.Forms.Button maxandMin;
+        private System.Windows.Forms.TextBox AlllotoNumerot;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.TextBox PlayerLoto6;
+        private System.Windows.Forms.TextBox PlayerLoto5;
+        private System.Windows.Forms.TextBox PlayerLoto4;
+        private System.Windows.Forms.TextBox PlayerLoto3;
+        private System.Windows.Forms.TextBox PlayerLoto2;
+        private System.Windows.Forms.TextBox PlayerLoto1;
+        private System.Windows.Forms.TextBox PlayerLoto0;
+        private System.Windows.Forms.Button OikeinLoto;
+        private System.Windows.Forms.TextBox Oikein;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Button LuodanLista;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox LisatanLista;
+        private System.Windows.Forms.Button ButtonLissaList;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.ComboBox ListBox;
+        private System.Windows.Forms.Button HaeLista;
+        private System.Windows.Forms.Label text;
+        private System.Windows.Forms.Button LuoDisconary;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.TextBox Key;
+        private System.Windows.Forms.TextBox Value;
+        private System.Windows.Forms.TextBox HaeKey;
+        private System.Windows.Forms.TextBox HaeValue;
+        private System.Windows.Forms.Button LissäDisconary;
+        private System.Windows.Forms.Button HaeDisconary;
     }
 }
