@@ -28,14 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.Valinta1 = new System.Windows.Forms.Button();
+            this.Valinta2 = new System.Windows.Forms.Button();
+            this.Valinta3 = new System.Windows.Forms.Button();
+            this.Valinta4 = new System.Windows.Forms.Button();
             this.buttonDefault = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.StartButton = new System.Windows.Forms.Button();
+            this.TimetTexBox = new System.Windows.Forms.TextBox();
+            this.TimerLabel = new System.Windows.Forms.Label();
             this.startwhile = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -44,15 +44,15 @@
             this.label4 = new System.Windows.Forms.Label();
             this.TallenusNumero = new System.Windows.Forms.TextBox();
             this.TallenusIndeksi = new System.Windows.Forms.TextBox();
-            this.button8 = new System.Windows.Forms.Button();
+            this.TalennaTaulukkoButton = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
-            this.button9 = new System.Windows.Forms.Button();
+            this.HaeTaulukkoButon = new System.Windows.Forms.Button();
             this.textBox6 = new System.Windows.Forms.TextBox();
-            this.button6 = new System.Windows.Forms.Button();
+            this.LottoButton = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.maxandMin = new System.Windows.Forms.Button();
             this.AlllotoNumerot = new System.Windows.Forms.TextBox();
@@ -97,45 +97,45 @@
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // button1
+            // Valinta1
             // 
-            this.button1.Location = new System.Drawing.Point(115, 92);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.ButtonClick);
+            this.Valinta1.Location = new System.Drawing.Point(115, 92);
+            this.Valinta1.Name = "Valinta1";
+            this.Valinta1.Size = new System.Drawing.Size(75, 23);
+            this.Valinta1.TabIndex = 0;
+            this.Valinta1.Text = "Valinta 1";
+            this.Valinta1.UseVisualStyleBackColor = true;
+            this.Valinta1.Click += new System.EventHandler(this.ButtonClick);
             // 
-            // button2
+            // Valinta2
             // 
-            this.button2.Location = new System.Drawing.Point(115, 144);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.ButtonClick);
+            this.Valinta2.Location = new System.Drawing.Point(115, 144);
+            this.Valinta2.Name = "Valinta2";
+            this.Valinta2.Size = new System.Drawing.Size(75, 23);
+            this.Valinta2.TabIndex = 1;
+            this.Valinta2.Text = "Valinta 2";
+            this.Valinta2.UseVisualStyleBackColor = true;
+            this.Valinta2.Click += new System.EventHandler(this.ButtonClick);
             // 
-            // button3
+            // Valinta3
             // 
-            this.button3.Location = new System.Drawing.Point(115, 201);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.ButtonClick);
+            this.Valinta3.Location = new System.Drawing.Point(115, 201);
+            this.Valinta3.Name = "Valinta3";
+            this.Valinta3.Size = new System.Drawing.Size(75, 23);
+            this.Valinta3.TabIndex = 2;
+            this.Valinta3.Text = "Valinta 3";
+            this.Valinta3.UseVisualStyleBackColor = true;
+            this.Valinta3.Click += new System.EventHandler(this.ButtonClick);
             // 
-            // button4
+            // Valinta4
             // 
-            this.button4.Location = new System.Drawing.Point(115, 258);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.ButtonClick);
+            this.Valinta4.Location = new System.Drawing.Point(115, 258);
+            this.Valinta4.Name = "Valinta4";
+            this.Valinta4.Size = new System.Drawing.Size(75, 23);
+            this.Valinta4.TabIndex = 3;
+            this.Valinta4.Text = "Valinta 4";
+            this.Valinta4.UseVisualStyleBackColor = true;
+            this.Valinta4.Click += new System.EventHandler(this.ButtonClick);
             // 
             // buttonDefault
             // 
@@ -147,33 +147,33 @@
             this.buttonDefault.UseVisualStyleBackColor = true;
             this.buttonDefault.Click += new System.EventHandler(this.ButtonClick);
             // 
-            // button5
+            // StartButton
             // 
-            this.button5.Location = new System.Drawing.Point(590, 91);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
-            this.button5.TabIndex = 46;
-            this.button5.Text = "Start";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.StartButton.Location = new System.Drawing.Point(590, 91);
+            this.StartButton.Name = "StartButton";
+            this.StartButton.Size = new System.Drawing.Size(75, 23);
+            this.StartButton.TabIndex = 46;
+            this.StartButton.Text = "Start";
+            this.StartButton.UseVisualStyleBackColor = true;
+            this.StartButton.Click += new System.EventHandler(this.StartrButton_Click);
             // 
-            // textBox1
+            // TimetTexBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(462, 91);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 47;
+            this.TimetTexBox.Location = new System.Drawing.Point(462, 91);
+            this.TimetTexBox.Name = "TimetTexBox";
+            this.TimetTexBox.Size = new System.Drawing.Size(100, 20);
+            this.TimetTexBox.TabIndex = 47;
             // 
-            // label1
+            // TimerLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(521, 144);
-            this.label1.MaximumSize = new System.Drawing.Size(70, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(63, 33);
-            this.label1.TabIndex = 48;
-            this.label1.Text = "999";
+            this.TimerLabel.AutoSize = true;
+            this.TimerLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.TimerLabel.Location = new System.Drawing.Point(521, 144);
+            this.TimerLabel.MaximumSize = new System.Drawing.Size(70, 0);
+            this.TimerLabel.Name = "TimerLabel";
+            this.TimerLabel.Size = new System.Drawing.Size(63, 33);
+            this.TimerLabel.TabIndex = 48;
+            this.TimerLabel.Text = "999";
             // 
             // startwhile
             // 
@@ -246,15 +246,15 @@
             this.TallenusIndeksi.Size = new System.Drawing.Size(69, 20);
             this.TallenusIndeksi.TabIndex = 58;
             // 
-            // button8
+            // TalennaTaulukkoButton
             // 
-            this.button8.Location = new System.Drawing.Point(1058, 267);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(91, 23);
-            this.button8.TabIndex = 2;
-            this.button8.Text = "Talenna";
-            this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.LuoTaulukko_Click);
+            this.TalennaTaulukkoButton.Location = new System.Drawing.Point(1058, 267);
+            this.TalennaTaulukkoButton.Name = "TalennaTaulukkoButton";
+            this.TalennaTaulukkoButton.Size = new System.Drawing.Size(91, 23);
+            this.TalennaTaulukkoButton.TabIndex = 2;
+            this.TalennaTaulukkoButton.Text = "Talenna";
+            this.TalennaTaulukkoButton.UseVisualStyleBackColor = true;
+            this.TalennaTaulukkoButton.Click += new System.EventHandler(this.LuoTaulukko_Click);
             // 
             // label5
             // 
@@ -301,15 +301,15 @@
             this.textBox5.Size = new System.Drawing.Size(69, 20);
             this.textBox5.TabIndex = 64;
             // 
-            // button9
+            // HaeTaulukkoButon
             // 
-            this.button9.Location = new System.Drawing.Point(1058, 363);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(91, 23);
-            this.button9.TabIndex = 3;
-            this.button9.Text = "Hae";
-            this.button9.UseVisualStyleBackColor = true;
-            this.button9.Click += new System.EventHandler(this.LuoTaulukko_Click);
+            this.HaeTaulukkoButon.Location = new System.Drawing.Point(1058, 363);
+            this.HaeTaulukkoButon.Name = "HaeTaulukkoButon";
+            this.HaeTaulukkoButon.Size = new System.Drawing.Size(91, 23);
+            this.HaeTaulukkoButon.TabIndex = 3;
+            this.HaeTaulukkoButon.Text = "Hae";
+            this.HaeTaulukkoButon.UseVisualStyleBackColor = true;
+            this.HaeTaulukkoButon.Click += new System.EventHandler(this.LuoTaulukko_Click);
             // 
             // textBox6
             // 
@@ -319,15 +319,15 @@
             this.textBox6.Size = new System.Drawing.Size(69, 20);
             this.textBox6.TabIndex = 66;
             // 
-            // button6
+            // LottoButton
             // 
-            this.button6.Location = new System.Drawing.Point(260, 91);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 23);
-            this.button6.TabIndex = 67;
-            this.button6.Text = "Lotto!";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click_1);
+            this.LottoButton.Location = new System.Drawing.Point(260, 91);
+            this.LottoButton.Name = "LottoButton";
+            this.LottoButton.Size = new System.Drawing.Size(75, 23);
+            this.LottoButton.TabIndex = 67;
+            this.LottoButton.Text = "Lotto!";
+            this.LottoButton.UseVisualStyleBackColor = true;
+            this.LottoButton.Click += new System.EventHandler(this.Lotto_Click);
             // 
             // panel1
             // 
@@ -717,15 +717,15 @@
             this.Controls.Add(this.label9);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.button6);
+            this.Controls.Add(this.LottoButton);
             this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.button9);
+            this.Controls.Add(this.HaeTaulukkoButon);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.button8);
+            this.Controls.Add(this.TalennaTaulukkoButton);
             this.Controls.Add(this.TallenusIndeksi);
             this.Controls.Add(this.TallenusNumero);
             this.Controls.Add(this.label4);
@@ -734,14 +734,14 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.startwhile);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button5);
+            this.Controls.Add(this.TimerLabel);
+            this.Controls.Add(this.TimetTexBox);
+            this.Controls.Add(this.StartButton);
             this.Controls.Add(this.buttonDefault);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.Valinta4);
+            this.Controls.Add(this.Valinta3);
+            this.Controls.Add(this.Valinta2);
+            this.Controls.Add(this.Valinta1);
             this.Name = "Paaformi";
             this.Text = "Paaformi";
             this.panel1.ResumeLayout(false);
@@ -755,14 +755,14 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button Valinta1;
+        private System.Windows.Forms.Button Valinta2;
+        private System.Windows.Forms.Button Valinta3;
+        private System.Windows.Forms.Button Valinta4;
         private System.Windows.Forms.Button buttonDefault;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button StartButton;
+        private System.Windows.Forms.TextBox TimetTexBox;
+        private System.Windows.Forms.Label TimerLabel;
         private System.Windows.Forms.Button startwhile;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -771,15 +771,15 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox TallenusNumero;
         private System.Windows.Forms.TextBox TallenusIndeksi;
-        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button TalennaTaulukkoButton;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button HaeTaulukkoButon;
         private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button LottoButton;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox Lotto8;
         private System.Windows.Forms.TextBox Lotto7;

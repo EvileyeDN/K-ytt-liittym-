@@ -35,13 +35,13 @@
             this.testaaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.infoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Toiminolisuus = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.UssiTietueButton = new System.Windows.Forms.Button();
+            this.TallenaButton = new System.Windows.Forms.Button();
+            this.PoistaButton = new System.Windows.Forms.Button();
+            this.IdTextBox = new System.Windows.Forms.TextBox();
+            this.NimiTextBox = new System.Windows.Forms.TextBox();
+            this.VuosiTextBox = new System.Windows.Forms.TextBox();
+            this.KestoTextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -54,7 +54,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.label7 = new System.Windows.Forms.Label();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.ArvioRichtexBox = new System.Windows.Forms.RichTextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.menuStrip2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -82,7 +82,6 @@
             this.tiedostoToolStripMenuItem.Name = "tiedostoToolStripMenuItem";
             this.tiedostoToolStripMenuItem.Size = new System.Drawing.Size(64, 20);
             this.tiedostoToolStripMenuItem.Text = "Tiedosto";
-            this.tiedostoToolStripMenuItem.Click += new System.EventHandler(this.tiedostoToolStripMenuItem_Click);
             // 
             // poistuToolStripMenuItem
             // 
@@ -105,7 +104,6 @@
             this.testaaToolStripMenuItem.Name = "testaaToolStripMenuItem";
             this.testaaToolStripMenuItem.Size = new System.Drawing.Size(203, 22);
             this.testaaToolStripMenuItem.Text = "Testaa Tietokantayhteytä";
-            this.testaaToolStripMenuItem.Click += new System.EventHandler(this.testaaToolStripMenuItem_Click);
             // 
             // infoToolStripMenuItem
             // 
@@ -122,72 +120,69 @@
             this.Toiminolisuus.Size = new System.Drawing.Size(70, 13);
             this.Toiminolisuus.TabIndex = 2;
             this.Toiminolisuus.Text = "Toiminolisuus";
-            this.Toiminolisuus.Click += new System.EventHandler(this.Toiminolisuus_Click);
             // 
-            // button1
+            // UssiTietueButton
             // 
-            this.button1.Location = new System.Drawing.Point(74, 79);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(200, 50);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Uusi tietue";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.UssiTietueButton.Location = new System.Drawing.Point(74, 79);
+            this.UssiTietueButton.Name = "UssiTietueButton";
+            this.UssiTietueButton.Size = new System.Drawing.Size(200, 50);
+            this.UssiTietueButton.TabIndex = 3;
+            this.UssiTietueButton.Text = "Uusi tietue";
+            this.UssiTietueButton.UseVisualStyleBackColor = true;
+            this.UssiTietueButton.Click += new System.EventHandler(this.UssiTietue_Button_Click);
             // 
-            // button2
+            // TallenaButton
             // 
-            this.button2.BackColor = System.Drawing.Color.Chartreuse;
-            this.button2.ForeColor = System.Drawing.Color.Black;
-            this.button2.Location = new System.Drawing.Point(74, 157);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(200, 50);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "Tallenna";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.TallenaButton.BackColor = System.Drawing.Color.Chartreuse;
+            this.TallenaButton.ForeColor = System.Drawing.Color.Black;
+            this.TallenaButton.Location = new System.Drawing.Point(74, 157);
+            this.TallenaButton.Name = "TallenaButton";
+            this.TallenaButton.Size = new System.Drawing.Size(200, 50);
+            this.TallenaButton.TabIndex = 4;
+            this.TallenaButton.Text = "Tallenna";
+            this.TallenaButton.UseVisualStyleBackColor = false;
+            this.TallenaButton.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button3
+            // PoistaButton
             // 
-            this.button3.BackColor = System.Drawing.Color.Red;
-            this.button3.ForeColor = System.Drawing.Color.Black;
-            this.button3.Location = new System.Drawing.Point(74, 228);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(200, 50);
-            this.button3.TabIndex = 5;
-            this.button3.Text = "Poista";
-            this.button3.UseVisualStyleBackColor = false;
+            this.PoistaButton.BackColor = System.Drawing.Color.Red;
+            this.PoistaButton.ForeColor = System.Drawing.Color.Black;
+            this.PoistaButton.Location = new System.Drawing.Point(74, 228);
+            this.PoistaButton.Name = "PoistaButton";
+            this.PoistaButton.Size = new System.Drawing.Size(200, 50);
+            this.PoistaButton.TabIndex = 5;
+            this.PoistaButton.Text = "Poista";
+            this.PoistaButton.UseVisualStyleBackColor = false;
             // 
-            // textBox1
+            // IdTextBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(86, 71);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(114, 20);
-            this.textBox1.TabIndex = 6;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.IdTextBox.Location = new System.Drawing.Point(86, 71);
+            this.IdTextBox.Name = "IdTextBox";
+            this.IdTextBox.ReadOnly = true;
+            this.IdTextBox.Size = new System.Drawing.Size(114, 20);
+            this.IdTextBox.TabIndex = 6;
             // 
-            // textBox2
+            // NimiTextBox
             // 
-            this.textBox2.Location = new System.Drawing.Point(86, 129);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(194, 20);
-            this.textBox2.TabIndex = 7;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
-            this.textBox2.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox2_KeyDown);
+            this.NimiTextBox.Location = new System.Drawing.Point(86, 129);
+            this.NimiTextBox.Name = "NimiTextBox";
+            this.NimiTextBox.Size = new System.Drawing.Size(194, 20);
+            this.NimiTextBox.TabIndex = 7;
+            this.NimiTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox2_KeyDown);
             // 
-            // textBox3
+            // VuosiTextBox
             // 
-            this.textBox3.Location = new System.Drawing.Point(86, 187);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(114, 20);
-            this.textBox3.TabIndex = 8;
+            this.VuosiTextBox.Location = new System.Drawing.Point(86, 187);
+            this.VuosiTextBox.Name = "VuosiTextBox";
+            this.VuosiTextBox.Size = new System.Drawing.Size(114, 20);
+            this.VuosiTextBox.TabIndex = 8;
             // 
-            // textBox4
+            // KestoTextBox
             // 
-            this.textBox4.Location = new System.Drawing.Point(86, 240);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(114, 20);
-            this.textBox4.TabIndex = 9;
+            this.KestoTextBox.Location = new System.Drawing.Point(86, 240);
+            this.KestoTextBox.Name = "KestoTextBox";
+            this.KestoTextBox.Size = new System.Drawing.Size(114, 20);
+            this.KestoTextBox.TabIndex = 9;
             // 
             // label1
             // 
@@ -237,15 +232,15 @@
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel1.Controls.Add(this.textBox2);
+            this.panel1.Controls.Add(this.NimiTextBox);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Controls.Add(this.textBox3);
-            this.panel1.Controls.Add(this.textBox4);
+            this.panel1.Controls.Add(this.IdTextBox);
+            this.panel1.Controls.Add(this.VuosiTextBox);
+            this.panel1.Controls.Add(this.KestoTextBox);
             this.panel1.Location = new System.Drawing.Point(12, 36);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(309, 353);
@@ -258,9 +253,9 @@
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel2.Controls.Add(this.Toiminolisuus);
-            this.panel2.Controls.Add(this.button1);
-            this.panel2.Controls.Add(this.button3);
-            this.panel2.Controls.Add(this.button2);
+            this.panel2.Controls.Add(this.UssiTietueButton);
+            this.panel2.Controls.Add(this.PoistaButton);
+            this.panel2.Controls.Add(this.TallenaButton);
             this.panel2.Location = new System.Drawing.Point(353, 36);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(314, 353);
@@ -273,7 +268,7 @@
             this.panel3.Controls.Add(this.label8);
             this.panel3.Controls.Add(this.numericUpDown1);
             this.panel3.Controls.Add(this.label7);
-            this.panel3.Controls.Add(this.richTextBox1);
+            this.panel3.Controls.Add(this.ArvioRichtexBox);
             this.panel3.Controls.Add(this.label6);
             this.panel3.Location = new System.Drawing.Point(12, 407);
             this.panel3.Name = "panel3";
@@ -312,14 +307,13 @@
             this.label7.TabIndex = 19;
             this.label7.Text = "Arvosana";
             // 
-            // richTextBox1
+            // ArvioRichtexBox
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(21, 31);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(259, 96);
-            this.richTextBox1.TabIndex = 18;
-            this.richTextBox1.Text = "";
-            this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
+            this.ArvioRichtexBox.Location = new System.Drawing.Point(21, 31);
+            this.ArvioRichtexBox.Name = "ArvioRichtexBox";
+            this.ArvioRichtexBox.Size = new System.Drawing.Size(259, 96);
+            this.ArvioRichtexBox.TabIndex = 18;
+            this.ArvioRichtexBox.Text = "";
             // 
             // label6
             // 
@@ -341,7 +335,6 @@
             this.Controls.Add(this.menuStrip2);
             this.Name = "Form1";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip2.ResumeLayout(false);
             this.menuStrip2.PerformLayout();
             this.panel1.ResumeLayout(false);
@@ -366,13 +359,13 @@
         private System.Windows.Forms.ToolStripMenuItem testaaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem infoToolStripMenuItem;
         private System.Windows.Forms.Label Toiminolisuus;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.Button UssiTietueButton;
+        private System.Windows.Forms.Button TallenaButton;
+        private System.Windows.Forms.Button PoistaButton;
+        private System.Windows.Forms.TextBox IdTextBox;
+        private System.Windows.Forms.TextBox NimiTextBox;
+        private System.Windows.Forms.TextBox VuosiTextBox;
+        private System.Windows.Forms.TextBox KestoTextBox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -385,7 +378,7 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox ArvioRichtexBox;
         private System.Windows.Forms.Label label6;
     }
 }

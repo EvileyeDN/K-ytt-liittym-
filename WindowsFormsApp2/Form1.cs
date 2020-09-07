@@ -19,70 +19,36 @@ namespace WindowsFormsApp2
 
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tiedostoToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void testaaToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Toiminolisuus_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void infoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MessageBox.Show("ohjelman tekijän: Nikita Ivanov");
         }
 
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
 
-            
-        }
-
-        private void button1_Click(object sender, EventArgs e)
+        private void UssiTietue_Button_Click(object sender, EventArgs e)
         {
             DateTime date1 = new DateTime();
             date1 = DateTime.Now;
-            this.textBox1.Text = "1";
-            this.textBox2.Text = "Syötä elokuvan nimi";
-            this.textBox3.Text = Convert.ToString(date1.Year);
-            this.textBox4.Text = "";
-            this.richTextBox1.Text = "";
+            this.IdTextBox.Text = "1";
+            this.NimiTextBox.Text = "Syötä elokuvan nimi";
+            this.VuosiTextBox.Text = Convert.ToString(date1.Year);
+            this.KestoTextBox.Text = "";
+            this.ArvioRichtexBox.Text = "";
            
-        }
-
-        private void richTextBox1_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void poistuToolStripMenuItem_Click(object sender, EventArgs e)
         {
             DateTime date1 = new DateTime();
             date1 = DateTime.Now;
-            if (this.textBox2.Text == "")
+            if (this.NimiTextBox.Text == "")
             {
-                this.textBox2.Text = "Syötä elokuvan nimi";
+                this.NimiTextBox.Text = "Syötä elokuvan nimi";
             }
-            if (this.textBox3.Text == "")
+            if (this.VuosiTextBox.Text == "")
             {
-                this.textBox3.Text = Convert.ToString(date1.Year);
+                this.VuosiTextBox.Text = Convert.ToString(date1.Year);
             }
             Application.Exit();
         }
@@ -91,20 +57,20 @@ namespace WindowsFormsApp2
         {
  
                 
-                if (this.textBox2.Text == "Syötä elokuvan nimi")
+                if (this.NimiTextBox.Text == "Syötä elokuvan nimi")
                 {
-                    this.textBox2.Text = "";
+                    this.NimiTextBox.Text = "";
                 }
             
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            string Check=this.textBox3.Text;
-            string Check2 = this.textBox4.Text;
-            bool CheckOk = true;
-            IsDigitsOnly(Check);
-            IsDigitsOnly(Check2);
+            string check=this.VuosiTextBox.Text;
+            string check2 = this.KestoTextBox.Text;
+            bool checkok = true;
+            IsDigitsOnly(check);
+            IsDigitsOnly(check2);
             string IsDigitsOnly(string str)
             {
                 
@@ -114,7 +80,7 @@ namespace WindowsFormsApp2
                     if (c < '0' || c > '9')
                     {
                         showText = true;
-                        CheckOk = false;
+                        checkok = false;
                     }
 
 
@@ -122,14 +88,14 @@ namespace WindowsFormsApp2
                 }
                 if (showText == true)
                 {
-                    if (str == Check && showText == true)
+                    if (str == check && showText == true)
                     {
                         MessageBox.Show("Julkaisvuosi ei ole oikein. Vain Numerot");
                         showText = false;
-                        Check = "";
+                        check = "";
 
                     }
-                    if (str == Check2 && showText == true)
+                    if (str == check2 && showText == true)
                     {
                         MessageBox.Show("Kesto ei ole oikein. Vain Numerot");
                         showText = false;
@@ -141,17 +107,17 @@ namespace WindowsFormsApp2
                 return str;
 
             }
-            if (this.textBox3.Text == "")
+            if (this.VuosiTextBox.Text == "")
             {
                 MessageBox.Show("Julkaisvuosi ei ole oikein. Ei saa tyhjäksi");
-                CheckOk = false;
+                checkok = false;
             }
-            if (this.textBox4.Text == "")
+            if (this.KestoTextBox.Text == "")
             {
                 MessageBox.Show("Kesto ei ole oikein. Ei saa tyhjäksi");
-                CheckOk = false;
+                checkok = false;
             }
-            if (CheckOk == true)
+            if (checkok == true)
             {
                 MessageBox.Show("Check OK!");
             }
